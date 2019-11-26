@@ -31,7 +31,7 @@ echo.
 set/p "pass=>  "
                                 :: ↓↓↓YOUR PASSWORD HERE ↓ DELETE 1234 ENTER YOUR PASSWORD↓↓↓
                                 :: FOR MORE INFORMATION READ "HOW TO" TEXT FILE
-								if NOT %pass%== 1234 goto FAIL
+					if NOT %pass%== 1234 goto FAIL
 attrib -h -s "HTG Locker"
 ren "HTG Locker" LOCKER
 goto End
