@@ -1,9 +1,10 @@
-# HideFiles
-Hide File And Folders In Windows With Password Lock.
-Usage:
-Create Your Own Password(No Limits Of Password Length) In KeY.bat File Save It.
-Ready to Use:
-click On Key file A folder With Name Locker Will be created.
-Paste Your Stuff In It. Then click key file type Y enter
-To get back your file:
-Run key File Enter your password.
+# Hide file and folders in windows with password lock.
+<br>
+## usage:
+```Default password: 0x00```
+you can change default password and create your own password edit in `key.bat` file
+## ready to use:
+Run `key.bat` file a folder with name `locker` will be created.
+paste your stuff in it. then click `key.bat` file press y folder `locker` will hide.
+## To get back your files:
+Run `key.bat` file enter your password.

@@ -1,48 +1,42 @@
 @ECHO OFF
 color A
 mode 60,15
-title Hide Files
-if EXIST "HTG Locker" goto UNLOCK 
-if NOT EXIST LOCKER goto Annon
-
+title Hide Files...
+if EXIST "System64" goto UNLOCK 
+if NOT EXIST locker goto Ancoder
 :CONFIRM
 echo.
 echo  ARE YOU SURE YOU WANT TO LOCK AND HIDE THE FOLDER (Y/N)
 echo.
-set/p "annon=>  "
-if %annon%==Y goto LOCK
-if %annon%==y goto LOCK
-if %annon%==n goto END
-if %annon%==N goto END
+set/p "ancode=>  "
+if %ancode%==Y goto LOCK
+if %ancode%==y goto LOCK
+if %ancode%==n goto END
+if %ancode%==N goto END
 echo.
 echo  Invalid choice Type (Y for YES) (N for NO).
 echo.
 goto CONFIRM
-
 :LOCK
-ren LOCKER "HTG Locker"
-attrib +h +s "HTG Locker"
+ren locker "System64"
+attrib +h +r +s "System64"
 goto End
-
 :UNLOCK
 echo.
 echo  ENTER PASSWORD:
 echo.
 set/p "pass=>  "
-                                :: ↓↓↓YOUR PASSWORD HERE ↓ DELETE 1234 ENTER YOUR PASSWORD↓↓↓
-                                :: FOR MORE INFORMATION READ "HOW TO" TEXT FILE
-					if NOT %pass%== 1234 goto FAIL
-attrib -h -s "HTG Locker"
-ren "HTG Locker" LOCKER
+::remove '0x00' and type your own password and save it.
+if NOT %pass%== 0x00 goto FAIL
+attrib -h -r -s "System64"
+ren "System64" locker
 goto End
-
 :FAIL
 color 4
 echo  INVALID PASSWORD
 echo.
 goto UNLOCK
-
-:Annon
-md LOCKER
+:Ancoder
+md locker
 goto End
 :End

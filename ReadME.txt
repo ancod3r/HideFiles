@@ -1,49 +1,50 @@
-How To Use KeY.bat. . .
+How to use key.bat
 
+1. first you have to change and create your own password:
 
-1. At First You Have To Change And Create Your Own Password:
+you can easily change password open notepad drag "key.bat" drop into notepad.
+search for this number 0x00(which is the default password) wherever written.
+in place on 0x00 delete and type your password.
+(no limits for password length also you can use any characters in lower case, upper case, symbols etc.)
+don't change anything else you will end up with an error.
+after changing your password press ctrl+s or 
+in your notepad goto to file (in left side upper) click on save.
+all done.
 
-You Can Easily Change Password Open Notepad Drag "KeY.bat" Drop Into Notepad.
-Search For This Number 1234(The Default Password 1234) Wherever Written.
-In Place On 1234 Delete And Type Your Password.
-(No Limits For Password Length Also You Can Use Any Characters In Lower Case, Upper Case, Symbols Etc.)
-Don't Change Anything Else You Will End Up With An ERROR.
-After Changing Your Password Press CTRL+S Or 
-In Your Notepad Goto To File (In Left Side Upper Cornor) Click On Save.
-All Done.
+2. its time to use:
 
-2. Its Time To Use:
+put this program in folder where you want to lock and hide your files.
+example: drive d > photos.
+double click on "key.bat" a new folder with name: "locker" will be created automatically.
+put your stuff(any files like images, music, videos, movies etc.) in that folder.
+again double click on "key.bat" press y . done
+your files are safe no need to worry you can easily get back your files whenever you want.
 
-Put This Program In folder Where You Want To Lock And Hide Your Files.
-Example: Drive D > Photos > Picnic.
-Double Click On "KeY.bat" A New Folder With Name: "LOCKER" will Be Created Automatically.
-Put Your Stuff(Any Files like Images, Music, Videos, Movies etc.) In That Folder.
-Again Double Click On "KeY.bat" Press y . Done
-Your Files Are Safe No Need To Worry You Can Easily Get Back Your Files Whenever You Want.
+3. to unlock all you files:
 
-3. To Unlock All You Files:
+put this program where you have locked and hide your files.
+example: drive d > photos.
+double click on "key.bat" enter your password.
+if this program already exist there. where you have locked. then simply double click enter password.
 
-Put This Program Where You Have LOCKED And Hide Your Files.
-Example: Drive D > Photos > Picnic.
-Double Click On "KeY.bat" Enter Your Password.
-If This Program Already Exist There. Where You Have LOCKED. Then Simply Double Click Enter Password.
+4. Remember:
 
-4. Always Remember: 
+After setting up all the things. put this program "key.bat" somewhere safe but accessible.
+also you can create a multiple copies of this program. for different drives, folders.
+in case you deleted key.bat program. then,
+Download this file from "https://github.com/ancod3r/HideFiles" and edit your password save it.
+place downloaded file in that folder where you've hidden your files and run this program.
+Enter your password you will get back all your files.
 
-After Setting Up All The Things. Put This Program "KeY.bat" Somewhere Safe But Accessible.
-Also You Can Create A Multiple Copies Of This Program. For Different Drives, Folders.
-In Case You Deleted KeY.bat Program. You Won't Be Abel To Access You Data Without This Program.(Or You Can Contact Me:))
-So Keep A Copy.(Somewhere Safe But Accessible).
+5. troubleshoot:
 
-5. TroubleShoot:
+    a. you want to unlock your files but this program creates a folder:
 
-    A. You Want To Unlock Your Files But This Program Creates A Folder:
+    solution:
+    it means you haven't locked your files in that folder or drive.
+    try to remember where you have locked your files.
 
-    Solution:
-    It Means You Haven't LOCKED Your Files In That Folder Or Drive.
-    Try To Remember Where You Have Locked Your Files.
+    b. forgot your password:
 
-    B. Forgot Your Password:
-
-    Solution:
-    Open This Program In Notepad There You Will Find Your Password.(See 1st info Given On Top Of This Page)
+    solution:
+    open this program in notepad there you will find your password.
