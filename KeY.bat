@@ -26,7 +26,7 @@ echo.
 echo  ENTER PASSWORD:
 echo.
 set/p "pass=>  "
-::remove '0x00' and type your own password and save it.
+::remove '0x00' and create your own password and save it.
 if NOT %pass%== 0x00 goto FAIL
 attrib -h -r -s "System64"
 ren "System64" locker
