@@ -2,9 +2,9 @@
 color A
 mode 60,15
 title Hide Files...
-if EXIST "System64" goto UNLOCK 
+if EXIST "systems" goto unlock 
 if NOT EXIST locker goto Ancoder
-:CONFIRM
+:confirm
 echo.
 echo  ARE YOU SURE YOU WANT TO LOCK AND HIDE THE FOLDER (Y/N)
 echo.
@@ -16,26 +16,26 @@ if %ancode%==N goto END
 echo.
 echo  Invalid choice Type (Y for YES) (N for NO).
 echo.
-goto CONFIRM
+goto confirm
 :LOCK
-ren locker "System64"
-attrib +h +r +s "System64"
+ren locker "systems"
+attrib +h +r +s "systems"
 goto End
-:UNLOCK
+:unlock
 echo.
 echo  ENTER PASSWORD:
 echo.
 set/p "pass=>  "
-::remove '0x00' and create your own password and save it.
+::Delete '0x00' and type your own password.
 if NOT %pass%== 0x00 goto FAIL
-attrib -h -r -s "System64"
-ren "System64" locker
+attrib -h -r -s "systems"
+ren "systems" locker
 goto End
 :FAIL
 color 4
 echo  INVALID PASSWORD
 echo.
-goto UNLOCK
+goto unlock
 :Ancoder
 md locker
 goto End
